@@ -561,6 +561,7 @@ const ExpensePage = () => {
                 <option value="Shopping">Shopping</option>
                 <option value="Entertainment">Entertainment</option>
                 <option value="Utilities">Utilities</option>
+                <option value="Annual Expense">Annual Expense</option>
                 <option value="Other">Other</option>
               </select>
             </div>
@@ -646,6 +647,7 @@ const ExpensePage = () => {
           "Utilities",
           "Healthcare",
           "Kids Need",
+          "Annual Expense",
           "Other",
         ]}
         color="orange"
