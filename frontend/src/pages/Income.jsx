@@ -154,7 +154,7 @@ const FilterSection = ({ filter, setFilter, handleExport }) => (
         <option value="Voucher">Voucher</option>
         <option value="Incentive">Incentive</option>
         <option value="Freelance">Freelance</option>
-        <option value="Investment">Investment</option>
+        <option value="Dividend">Dividends</option>
         <option value="Bonus">Bonus</option>
         <option value="Other">Other</option>
       </select>
