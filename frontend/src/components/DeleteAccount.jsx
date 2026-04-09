@@ -44,7 +44,7 @@ const DeleteAccount = () => {
       {/* Delete Button */}
       <button
         onClick={() => setShowModal(true)}
-        className="bg-gradient-to-r from-red-500 to-pink-500 hover:scale-105 transition transform text-white px-5 py-2 rounded-xl shadow-lg"
+        className="bg-linear-to-r from-red-500 to-pink-500 hover:scale-105 transition transform text-white px-5 py-2 rounded-xl shadow-lg"
       >
         ⚠️ Delete My Account
       </button>

@@ -46,7 +46,7 @@ const NotificationItem = ({ n, removeNotification }) => {
       onMouseLeave={() => setIsPaused(false)}
     >
       <div
-        className={`flex flex-col sm:flex-row items-start sm:items-center gap-3 px-5 py-3 rounded-xl shadow-xl backdrop-blur-lg border min-w-[260px] max-w-sm
+        className={`flex flex-col sm:flex-row items-start sm:items-center gap-3 px-5 py-3 rounded-xl shadow-xl backdrop-blur-lg border min-w-65 max-w-sm
           ${
             n.type === "success"
               ? "bg-green-500/90 border-green-300 text-white"
