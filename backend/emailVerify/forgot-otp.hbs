@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>{{purpose}}</title>
+     <style>
+          body {
+               font-family: 'Segoe UI', Arial, sans-serif;
+               background: #eef1f7;
+               margin: 0;
+               padding: 0;
+          }
+
+          .container {
+               max-width: 600px;
+               margin: 40px auto;
+               background: #ffffff;
+               border-radius: 12px;
+               border: 2px solid #064d0b;
+               overflow: hidden;
+               box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+          }
+
+          .header {
+               background: #064d0b;
+               color: #fff;
+               text-align: center;
+               padding: 28px 20px;
+               font-size: 24px;
+               font-weight: 700;
+               letter-spacing: 1px;
+          }
+
+          .body {
+               padding: 28px 24px;
+               color: #333;
+               font-size: 16px;
+               line-height: 1.7;
+          }
+
+          .body p {
+               margin: 12px 0;
+          }
+
+          .purpose-box {
+               display: block;
+               font-size: 28px;
+               font-weight: bold;
+               color: #0e5402;
+               text-align: center;
+               margin: 20px auto;
+               letter-spacing: 2px;
+               background: #f4f4f8;
+               padding: 10px 20px;
+               border-radius: 8px;
+               box-shadow: 0 0 10px rgba(108, 153, 0, 0.4);
+               width: fit-content;
+          }
+
+          .footer {
+               text-align: center;
+               font-size: 12px;
+               color: #888;
+               padding: 18px;
+               border-top: 1px solid #eee;
+          }
+
+          a {
+               color: #064d0b;
+               text-decoration: none;
+               font-weight: bold;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="container">
+
+          <!-- Header -->
+          <div class="header">{{purpose_text}}</div>
+
+          <!-- Body -->
+          <div class="body">
+               <p>Hello,</p>
+               <p>{{purpose_text}} for your account. Use the code below to proceed:</p>
+
+               <div class="purpose-box">{{code}}</div>
+
+               <p>This code is valid for <strong>{{otp_expiry}} minutes</strong>. Keep it secure and do not share it
+                    with anyone.</p>
+
+               <p style="margin-top:20px; font-size:14px; color:#666;">
+                    You're receiving this email because a request was made for your {{app_name}} account.
+                    If this wasn't you, please ignore this email.
+               </p>
+
+               <p style="margin-top:24px; text-align:center;">
+                    <a href="{{website_url}}" target="_blank">Visit Expense Tracker </a>
+               </p>
+          </div>
+
+          <!-- Footer -->
+          <div class="footer">
+               &copy; {{year}} Expense Tracker. All rights reserved.<br>
+               This is an automated email. Please do not reply.
+          </div>
+
+     </div>
+</body>
+
+</html>
